@@ -155,6 +155,6 @@ function q($sql){
     return $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 }
 
-
+$Bottom=new DB('bot');
 
 ?>
