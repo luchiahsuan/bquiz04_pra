@@ -46,11 +46,12 @@ body
 	padding:2%;
 	min-height:550px;
 	border:#000 1px solid;
-	overflow: hidden;
+	overflow: auto;
 }
 #bottom
 {
 	height:70px;
+	background:url(icon/bot.png);
 	background-size:cover;
 }
 .al

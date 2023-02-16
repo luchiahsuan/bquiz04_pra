@@ -44,7 +44,7 @@ class DB{
         if(isset($arg[1])){
             $sql = $sql . $arg[1];
         }
-
+        //echo $sql;
         return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
     }
@@ -83,6 +83,7 @@ class DB{
     }
 
     public function count(...$arg){
+        //dd($arg);
         return $this->math('count',...$arg); //...為解構賦值
     }
 
@@ -149,13 +150,13 @@ function to($url){
 }
 
 function q($sql){
-    $dsn="mysql:host=localhost;charset=utf8;dbname=db18";
-    $pdo=new PDO($dsn,'root','');
-
+    $pdo=new PDO("mysql:host=localhost;charset=utf8;dbname=db08",'root','');
     return $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 }
 
-$Bottom=new DB('bot');
+
+$Bottom=new DB('bottom');
 $Mem=new DB('mem');
+$Admin=new DB('admin');
 
 ?>

@@ -4,27 +4,27 @@
 <table class="all">
     <tr>
         <td class="tt ct">姓名</td>
-        <td class="pp"><input type="text" name="name" id="name"></td>
+        <td class="pp"><input type="text" name="name" id=""></td>
     </tr>
     <tr>
         <td class="tt ct">帳號</td>
-        <td class="pp"><input type="text" name="acc" id="acc"></td>
+        <td class="pp"><input type="text" name="acc" id=""></td>
     </tr>
     <tr>
         <td class="tt ct">密碼</td>
-        <td class="pp"><input type="password" name="pw" id="pw"></td>
+        <td class="pp"><input type="password" name="pw" id=""></td>
     </tr>
     <tr>
         <td class="tt ct">電話</td>
-        <td class="pp"><input type="text" name="tel" id="tel"></td>
+        <td class="pp"><input type="text" name="tel" id=""></td>
     </tr>
     <tr>
         <td class="tt ct">住址</td>
-        <td class="pp"><input type="text" name="addr" id="addr"></td>
+        <td class="pp"><input type="text" name="addr" id=""></td>
     </tr>
     <tr>
         <td class="tt ct">電子信箱</td>
-        <td class="pp"><input type="text" name="email" id="email"></td>
+        <td class="pp"><input type="text" name="email" id=""></td>
     </tr>
 </table>
 <div class="ct">
