@@ -18,7 +18,7 @@
                 <?php
                 if ($row['acc'] != 'admin') {
                 ?>
-                    <button onclick="location.href='?do=edit_admin.php&id=<?= $row['id']; ?>'">修改</button>
+                    <button onclick="location.href='?do=edit_admin&id=<?= $row['id']; ?>'">修改</button>
                     <button onclick="del('admin',<?= $row['id']; ?>)">刪除</button>
                 <?php
                 } else {
