@@ -42,7 +42,9 @@
             if (parseInt(result) || acc == 'admin') {
                 alert("此帳號已存在,請使用別的帳號")
             } else {
-                alert("此帳號可使用")
+                $.post("./api/save_mem.php",mem,()=>{
+                    location.href='?do=login'
+                })
 
             }
         })
