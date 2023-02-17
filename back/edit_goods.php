@@ -40,7 +40,7 @@
             </tr>
             <tr>
                 <td class="tt ct">商品介紹</td>
-                <td class="tt pp"><input type="text" name="intro" id="intro"></td>
+                <td class="tt pp"><input type="textarea" name="intro" id="intro"></td>
             </tr>
         </table>
         <div class="ct">
