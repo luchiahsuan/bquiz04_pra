@@ -1,5 +1,5 @@
 <h2 class="ct">新增商品</h2>
-<form action="./api/save_goods.php" method="post">
+<form action="./api/save_goods.php" method="post" enctype="multipart/form-data">
     <?php
     $row = $Goods->find($_GET['id']);
     foreach ($rows as $row) {
@@ -20,7 +20,7 @@
             </tr>
             <tr>
                 <td class="tt ct">商品名稱</td>
-                <td class="tt pp"><input type="text" name="" id=""></td>
+                <td class="tt pp"><input type="text" name="name" id="name"></td>
             </tr>
             <tr>
                 <td class="tt ct">商品價格</td>
