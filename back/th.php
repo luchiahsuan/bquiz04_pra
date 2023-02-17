@@ -110,11 +110,30 @@ $bigs = $Type->all(['parent' => 0]);
             <td>
                 <button onclick="location.href='?do=edit_goods&id=<?= $row['id']; ?>'">修改</button>
                 <button onclick="del('Goods',<?= $row['id']; ?>)">刪除</button>
-                <button onclick="sh('up',<?= $row['id']; ?>)">上架</button>
-                <button onclick="sh('down',<?= $row['id']; ?>)">下架</button>
+                <button onclick="sh('up',<?= $row['id']; ?>,this)">上架</button>
+                <button onclick="sh('down',<?= $row['id']; ?>,this)">下架</button>
             </td>
         </tr>
     <?php
     }
     ?>
 </table>
+
+<script>
+    function sh(type, id, dom) {
+
+        $.post("./api/sh.php", {
+            type,
+            id
+        }, () => {
+            switch (type) {
+                case 'up':
+                    $(dom).parent().prev().text("販售中")
+                    break;
+                case 'down':
+                    $(dom).parent().prev().text("已下架")
+                    break;
+            }
+        })
+    }
+</script>
