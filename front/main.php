@@ -8,7 +8,7 @@ if (isset($_GET['type']) && $_GET['type'] != 0) {
     } else {
         $type_big = $Type->find($type['parent']);
         $nav = $type_big['name'] . " > " . $type['name'];
-        $rows = $Goods->all(['sh' => 1, 'big' => $mid['id']]);
+        $rows = $Goods->all(['sh' => 1, 'mid' => $type['id']]);
     }
 } else {
     $nav = "全部商品";
@@ -28,7 +28,9 @@ foreach ($rows as $row) {
 
     <div class="all pp goods" style="display:flex;">
         <div class="ct">
-            <img src="./upload/<?= $row['img']; ?>" alt="" style="width:250px" class="tt">
+            <a href="?do=detail&id=<?= $row['id']; ?>">
+                <img src="./upload/<?= $row['img']; ?>" alt="" style="width:250px" class="tt">
+            </a>
         </div>
         <div>
             <div class="ct tt"><?= $row['name']; ?></div>
