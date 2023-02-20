@@ -44,7 +44,7 @@ body {
 	display: inline-block;
 	width: 71%;
 	padding: 2%;
-	min-height: 550px;
+	height: 550px;
 	border: #000 1px solid;
 	overflow: auto;
 }
@@ -125,4 +125,15 @@ div.ww:hover>div.s {
 
 .sb button {
 	font-size: 12px;
+}
+
+.goods>div>div{
+padding: 5px;
+border: 1px solid white;
+}
+.goods > div:nth-child(1){
+	padding:5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
