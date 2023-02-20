@@ -20,7 +20,7 @@ $pr=unserialize($admin['pr']);
 	<div id="main">
 		<div id="top">
 			<a href="index.php">
-				<img src="./icon/0416.jpg" style="width:72%">
+				<img src="./icon/0416.jpg" style="width:62%">
 			</a>
 			<img src="./icon/0417.jpg" style="width:25%">
 		</div>
