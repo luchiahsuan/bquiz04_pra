@@ -1,8 +1,12 @@
 <?php
-if(isset($_SESSION['mem'])){
-}else{
-    to("?do=login");
+if(isset($_GET['id'])){
+    $_SESSION['cart'][$_GET['id']]=$_GET['qt'];
 }
 
+if(isset($_SESSION['mem'])){
+}else{
+    to("index.php?do=login");
+}
 
+dd($_SESSION['cart']);
 
