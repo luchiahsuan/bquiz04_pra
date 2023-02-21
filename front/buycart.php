@@ -54,11 +54,9 @@ if (!isset($_SESSION['cart'])) {
 ?>
 
 <script>
-function removeItem(id,dom){
+function removeItem(id){
     $.post("./api/remove_item.php",{id},()=>{
-        // location.href="?do=buycart";
-        $(dom).parents('tr').remove()
-        history.pushState(null,null,'?do=buycart')
+        location.href="?do=buycart";
     })
 }
 
